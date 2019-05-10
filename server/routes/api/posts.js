@@ -28,7 +28,7 @@ router.delete('/:id', async (req, res) => {
 //Learn how to correctly add Stitch integratiom and Add Future Functionalities
  async function loadPostsCollection() {
     const client = await mongodb.MongoClient.connect(
-        'mongodb+srv://Moses:Moses00@cluster0-ksz0g.mongodb.net/test?retryWrites=true', 
+        'mongodb://YOUR_OWN_MONGODB', 
         {
             useNewUrlParser: true
         }
